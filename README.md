@@ -61,10 +61,7 @@ Copy the VideoTimelineView folder in this project to yours
      //Set trimmer from 5 to 10 with animation and move to 3
     videoTimelineView.setTrim(start:5, end:10, seek:3, animate:true)
     ```
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
