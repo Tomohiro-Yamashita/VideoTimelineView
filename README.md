@@ -55,8 +55,8 @@ Copy the VideoTimelineView folder in this project to yours
      //Go to 0s with animation
     videoTimelineView.moveTo(0, animate:true)
     
-     //Set trimmer from 5 to 10 with animation
-    videoTimelineView.setTrim(start:5, end:10, seek:nil, animate:true)
+     //Set trimmer from 5 to 10 with animation and move to 3
+    videoTimelineView.setTrim(start:5, end:10, seek:3, animate:true)
     ```
 
 ## Contact
