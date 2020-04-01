@@ -84,7 +84,7 @@ class TimelineMeasure: UIView {
                 visibleRect = parent.visibleRect()
             }
         }
-        let startIndex = index(visibleRect.origin.x) - 1
+        let startIndex = index(visibleRect.origin.x) - 10 * (division + 1)
         let endIndex = index(visibleRect.origin.x + visibleRect.size.width)
         
         for index in startIndex ... endIndex {

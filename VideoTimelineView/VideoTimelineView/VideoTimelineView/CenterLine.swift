@@ -67,7 +67,7 @@ class CenterLine: UIView {
         UIColor(hue: 0, saturation:0, brightness:1, alpha: 0.92).setFill()
         
         let labelRect = CGRect(x: margin,y: 0.3,width: self.frame.size.width - margin * 2,height: timeLabel.frame.size.height + 1)
-        let rectPath = UIBezierPath(roundedRect:labelRect, cornerRadius:6)
+        let rectPath = UIBezierPath(roundedRect:labelRect, cornerRadius:timeLabel.frame.size.height)
         rectPath.fill()
         context.restoreGState()
         

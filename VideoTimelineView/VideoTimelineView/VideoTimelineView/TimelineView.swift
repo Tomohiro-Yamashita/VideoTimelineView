@@ -64,7 +64,7 @@ class TimelineView: UIView, UIScrollViewDelegate {
         scroller.coordinate()
         
         centerLine.timeLabel.frame.size.height = scroller.measure.frame.size.height - 2
-        let centerLineWidth:CGFloat = 60
+        let centerLineWidth:CGFloat = scroller.measure.frame.size.height * 5
         centerLine.frame = CGRect(x: (self.frame.size.width - centerLineWidth) / 2,y: 0,width: centerLineWidth,height: self.frame.size.height)
         
         centerLine.update()

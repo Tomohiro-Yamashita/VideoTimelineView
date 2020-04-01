@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class ViewController: UIViewController, TimelinePlayStatusReceiver{
+class ViewController: UIViewController, TimelinePlayStatusReceiver {
 
     var videoTimelineView:VideoTimelineView!
     let playerView = UIView()
