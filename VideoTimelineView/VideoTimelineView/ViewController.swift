@@ -37,7 +37,7 @@ class ViewController: UIViewController, TimelinePlayStatusReceiver{
         view.addSubview(videoTimelineView)
         
         videoTimelineView.moveTo(0, animate:false)
-        videoTimelineView.setTrim(start:30, end:60, seek:nil, animate:false)
+        videoTimelineView.setTrim(start:5, end:10, seek:nil, animate:false)
 
         
         
