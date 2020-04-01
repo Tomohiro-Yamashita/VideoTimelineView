@@ -1,6 +1,6 @@
 # VideoTimelineView
 Video timeline UI for iOS Apps
-- With trimmer
+- You can trim
 - Zoom in/out with pinch
 - Scrub with sound
 - Repeat playing in the trim
