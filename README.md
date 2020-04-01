@@ -28,9 +28,9 @@ Copy the VideoTimelineView folder in this project to yours
 - Get actions
     Implement these functions in your viewController
     ```
-    func videoTimelineStopped() //Invoked when stopped
-    func videoTimelineMoved() //Invoked when moved
-    func videoTimelineTrimChanged() //Invoked when trimmer changed
+    func videoTimelineStopped()
+    func videoTimelineMoved()
+    func videoTimelineTrimChanged()
     ```
 
     To get values of the trimmer
@@ -43,13 +43,22 @@ Copy the VideoTimelineView folder in this project to yours
 
 - To control
     ```
-    videoTimelineView.repeatOn = true //Repeat in the trimmer
-    videoTimelineView.setTrimIsEnabled(true) //If set in false, the trimmer will be ignored
-    videoTimelineView.setTrimmerIsHidden(true) //Hide trimmer
-    videoTimelineView.moveTo(0, animate:true) //Go to 0s with animation
-    videoTimelineView.setTrim(start:5, end:10, seek:nil, animate:true) //Set trimmer from 5 to 10 with animation
+     //Repeat in the trimmer
+    videoTimelineView.repeatOn = true
+    
+     //If set in false, the trimmer will be ignored
+    videoTimelineView.setTrimIsEnabled(true)
+    
+     //Hide trimmer
+    videoTimelineView.setTrimmerIsHidden(true)
+    
+     //Go to 0s with animation
+    videoTimelineView.moveTo(0, animate:true)
+    
+     //Set trimmer from 5 to 10 with animation
+    videoTimelineView.setTrim(start:5, end:10, seek:nil, animate:true)
     ```
 
-
-
+## Contact
+[E-mail](tomo_dev@sockettv.org), [twitter](https://twitter.com/DevYamashita), [Facebook](https://www.facebook.com/TomohiroYamashitaApps/)
 
