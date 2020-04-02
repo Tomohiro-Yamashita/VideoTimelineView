@@ -290,7 +290,13 @@ class TrimView: UIView {
         var min:Float64 = 0
         var max:Float64 = movieDuration
         let minDistance = knobsMinDistanceTime()
-        if !canPassThroughEachKnobs {
+        if canPassThroughEachKnobs {
+            if knob == startKnob {
+                max -= minDistance
+            } else if knob == endKnob {
+                min += minDistance
+            }
+        } else {
             if knob == startKnob {
                 max = endKnob.knobTimePoint - minDistance
             } else if knob == endKnob {
@@ -664,7 +670,13 @@ class TrimKnob:UIView {
                 swapping = knobWidth
             }
         }
-        if (self == trimView.startKnob && dragPoint > anotherTimePoint) || (self == trimView.endKnob && dragPoint < anotherTimePoint) {
+        var rangeOut = false
+        let range = trimView.knobMoveRange(self)
+        if timePoint > range.max || timePoint < range.min {
+            rangeOut = true
+        }
+        
+        if rangeOut == false && ((self == trimView.startKnob && dragPoint > anotherTimePoint) || (self == trimView.endKnob && dragPoint < anotherTimePoint)) {
                 timelineView.swapTrimKnobs()
         }
         
