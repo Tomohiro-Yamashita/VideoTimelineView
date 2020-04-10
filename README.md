@@ -4,6 +4,9 @@ Video timeline UI for iOS Apps
 - Scrub with sound
 - Repeat playing in the trimmer
 
+![screenshot](http://tomohiroyamashita.web.fc2.com/github/images/videotimelineview01.png)
+
+
 ## Usage
 Copy the VideoTimelineView folder in this project to yours
 
