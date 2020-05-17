@@ -63,7 +63,7 @@ Copy the VideoTimelineView folder in this project to yours
      //Set trimmer from 5 to 10 with animation and move to 3
     videoTimelineView.setTrim(start:5, end:10, seek:3, animate:true)
     ```
-## Usage
+## Sample Product
 The app with VideoTimeLlineView [on the AppStore](https://apps.apple.com/us/app/examplay/id1509013277?ls=1).
 
 ## License
