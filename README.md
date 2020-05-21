@@ -64,7 +64,7 @@ Copy the VideoTimelineView folder in this project to yours
     videoTimelineView.setTrim(start:5, end:10, seek:3, animate:true)
     ```
 ## Example Product
-The app with VideoTimeLlineView [on the AppStore](https://apps.apple.com/us/app/examplay/id1509013277?ls=1).
+The app with VideoTimeLlineView [on the AppStore](https://apps.apple.com/us/app/examplay/id1509013277?ls=1)(Free).
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
