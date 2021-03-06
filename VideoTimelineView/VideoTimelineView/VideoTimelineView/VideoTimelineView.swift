@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-protocol TimelinePlayStatusReceiver {
+protocol TimelinePlayStatusReceiver: class {
     func videoTimelineStopped()
     func videoTimelineMoved()
     func videoTimelineTrimChanged()
@@ -26,7 +26,7 @@ class VideoTimelineView: UIView {
     public private(set) var asset:AVAsset? = nil
     var player:AVPlayer? = nil
     
-    var playStatusReceiver:TimelinePlayStatusReceiver? = nil
+    weak var playStatusReceiver:TimelinePlayStatusReceiver? = nil
     
     var repeatOn:Bool = false
     
